@@ -1,0 +1,15 @@
+[32m2021-07-06 21:40:45,677[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: Brain-Tumor-Progression
+                Workers: 5
+                Concurrent Threads: 5
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 160
+                if not:
+                    max_workers = 5
+                TCIA-API-Requester 0.1.0-beta1
+                [0m

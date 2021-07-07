@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "TAr"
+version = "0.1.0"
+description = ""
+authors = ["JonNesvold <jon.nesvold@pm.me>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+tqdm = "^4.61.2"
+requests = "^2.25.1"
+futurist = "^2.3.0"
+fake-useragent = "^0.1.11"
+beautifulsoup4 = "^4.9.3"
+colorlog = "^5.0.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
