@@ -50,12 +50,6 @@ class RequestController:
         """
         self.data_path, self.patient_dict = get_series_list(self.dataset_name)
 
-        # j = json.dumps(self.patient_dict)
-        # with open(config.RAW_DATA + 'data_path.txt', 'w') as file:
-        #     file.write(self.data_path)
-        # with open(config.RAW_DATA + 'dict.json', 'w') as file:
-        #     file.write(j)
-
         if len(self.patient_dict) > 50:
             log.warning('There are more than 50 patients in this dataset')
 
@@ -65,11 +59,6 @@ class RequestController:
         """
         This method controls the influx of intances from the dataset
         """
-        # with open(config.RAW_DATA + 'data_path.txt', 'r') as file:
-        #     self.data_path = file.read()
-        # with open(config.RAW_DATA + 'dict.json', 'r') as file:
-        #     pat = file.read()
-        # self.patient_dict = json.loads(pat)
         max_workers = cpu_count() * self.workers if self.use_cpu_count else self.workers
         # NOTE: if keeps staying flaky, try executor.submit with a list comprehension
         with cf.ThreadPoolExecutor(
@@ -94,16 +83,9 @@ class RequestController:
                                             sedecs_list, patient,
                                             self.data_path
                                             )))
+                breakpoint()
                 executor.map(lambda p: get_instance_series(*p), self.UID_LIST)
 
-            # TODO: Implement parallelism on top of the threading for better performance
-            # processes = [mp.Process(target=patient_para, args=(patient, patient_info)) for patient, patient_info in self.patient_dict.items()]
-
-            # for proc in processes:
-            #     proc.start()
-
-            # for proc in processes:
-            #     proc.join()
 
     def run(self):
         log.pipe(f"""

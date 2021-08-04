@@ -13,3 +13,64 @@
                     max_workers = 5
                 TCIA-API-Requester 0.1.0-beta1
                 [0m
+[32m2021-08-03 15:21:12,977[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: Brain-Tumor-Progression
+                Workers: 5
+                Concurrent Threads: 5
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 160
+                if not:
+                    max_workers = 5
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2021-08-03 16:42:22,693[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: Brain-Tumor-Progression
+                Workers: 5
+                Concurrent Threads: 5
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 160
+                if not:
+                    max_workers = 5
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2021-08-03 16:48:47,015[0m | [32mPIPE    [0m | [32mData extracted and saved, you are all set (⌐■_■)[0m
+[32m2021-08-03 16:54:44,846[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: Brain-Tumor-Progression
+                Workers: 5
+                Concurrent Threads: 5
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 160
+                if not:
+                    max_workers = 5
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2021-08-03 17:01:08,603[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: Brain-Tumor-Progression
+                Workers: 5
+                Concurrent Threads: 5
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 160
+                if not:
+                    max_workers = 5
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
