@@ -6,7 +6,6 @@ are used in various modules, classes and controllers.
 
 # externals
 import os
-from collections import defaultdict
 from fake_useragent import UserAgent
 # internals
 from src.helpers import nested_dict
@@ -26,21 +25,20 @@ JSON_FILE_PATH = os.path.join(RAW_DATA, 'json_files')
 NII_JSON_PATH = os.path.join(JSON_FILE_PATH, 'nifti_{project_name}.json')
 HEADER_JSON_PATH = os.path.join(JSON_FILE_PATH, 'header_{project_name}.json')
 
-
 # config for the TCIA API requests
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # URLs
-BASE_URL = 'https://services.cancerimagingarchive.net/services/v3'
+BASE_URL = 'https://services.cancerimagingarchive.net/nbia-api/services/v1'
 RESOURCE = 'TCIA'
-QUERY_IMGS = 'query/getImage'
-QUERY_SERIES = 'query/getSeries'
-QUERY_PATIENT = 'query/getPatient'
+QUERY_IMGS = 'getImage'
+QUERY_SERIES = 'getSeries'
+QUERY_PATIENT = 'getPatient'
 
 # The final base URLs
-URL_SERIES = os.path.join(BASE_URL, RESOURCE, QUERY_SERIES)
-URL_PATIENT = os.path.join(BASE_URL, RESOURCE, QUERY_PATIENT)
-URL_IMG = os.path.join(BASE_URL, RESOURCE, QUERY_IMGS)
+URL_SERIES = os.path.join(BASE_URL, QUERY_SERIES)
+URL_PATIENT = os.path.join(BASE_URL, QUERY_PATIENT)
+URL_IMG = os.path.join(BASE_URL, QUERY_IMGS)
 
 # Some variables for extension checks
 imgs_with_ext = 0
