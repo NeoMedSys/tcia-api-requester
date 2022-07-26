@@ -17,13 +17,11 @@ LOG_LEVEL_E = logging.ERROR
 LOGFORMAT = '%(log_color)s%(levelname)-8s%(reset)s | %(log_color)s%(message)s%(reset)s'
 LOGFORMAT_ERROR = '%(log_color)s%(asctime)-8s%(reset)s | %(log_color)s%(levelname)-8s%(reset)s | %(log_color)s%(message)s%(reset)s'
 
-ROOT = os.environ['PYTHONPATH']
-
 # Adding file path for error logs and levels above
 if sys.version_info[0] >= 3.8:
     FILE_PATH = os.path.join('docs/proj_logging/level_errors_logs.log')
 else:
-    FILE_PATH = os.path.join(ROOT, 'docs/proj_logging/level_errors_logs.log')
+    FILE_PATH = os.path.join(os.getcwd(), 'docs/proj_logging/level_errors_logs.log')
 
 logging.addLevelName(SUCCESS, "SUCCESS")
 
