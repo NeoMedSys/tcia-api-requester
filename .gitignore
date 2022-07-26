@@ -154,4 +154,5 @@ cython_debug/
 *.dcm
 *.nii
 
+/TAr/data
 /data
