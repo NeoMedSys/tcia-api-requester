@@ -51,6 +51,8 @@ WORKERS = 5
 THREAD_NUM = 5
 USE_CPU_COUNT = False
 
+CHAR_TO_REMOVE = ['#', '%', '-', '*', '@', '!']
+
 # Parameters for to use in the base URL
 get_patient_params = {
                     'format': 'json',

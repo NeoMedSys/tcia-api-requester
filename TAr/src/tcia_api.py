@@ -104,18 +104,18 @@ def get_instance_series(
     NoReturn
     """
     # define a mutable dict
-    get_instance_params = {'SeriesInstanceUID': 'placeholder'}
+    # get_instance_params = {'SeriesInstanceUID': 'placeholder'}
     # make sure the patient string is clean
     patient = patient.replace(' ', '-').lower()
     # Now make an API request for each SeriesInstance
     for siUID, stUID, sdUID in tzip(siuid_list[0], stuid_list[0], sidesc_list[0]):
 
         # update the SeriesInstanceUID parameter
-        get_instance_params.update({'SeriesInstanceUID': f'{siUID}'})
+        # get_instance_params.update({'SeriesInstanceUID': f'{siUID}'})
 
         resp = api_request(
                         config.URL_IMG,
-                        params=get_instance_params,
+                        params={'SeriesInstanceUID': siUID},
                         is_series=False
                         )
 
@@ -138,10 +138,7 @@ def get_instance_series(
         series_folder = os.path.join(study_folder, 'series-{series}').format(series=series)
         sedesc_folder = os.path.join(series_folder, 'sedesc-{sedesc}').format(sedesc=sdUID)
 
-        if patient_folder.islower():
-            check_make_folder(patient_folder)
-        else:
-            log.error(f'found upper case values in {patient_folder}')
+        check_make_folder(patient_folder)
         check_make_folder(study_folder)
         check_make_folder(sedesc_folder)
 

@@ -62,7 +62,6 @@ class RequestController:
         UID_LIST = []
         max_workers: int = cpu_count() * self.workers if self.use_cpu_count else self.workers
         # NOTE: if keeps staying flaky, try executor.submit with a list comprehension
-        breakpoint()
         with cf.ThreadPoolExecutor(
                             max_workers=max_workers,
                             thread_name_prefix='tcia_api'

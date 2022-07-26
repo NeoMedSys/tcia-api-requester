@@ -109,15 +109,14 @@ def api_request(url: str, params: Dict[str, str], is_series: bool = True) -> Dic
     headers = {'User-Agent': config.USER_AGENT}
     try:
         resp = requests.get(url, params=params, verify=True, headers=headers)
-    except HTTPError as e:
+    except HTTPError:
         log.error(
             f'request failed, this is the url: {resp.request.url}',
             exc_info=True
             )
-        if resp.status_code != 200:
-            raise e(f'request failed with status code: {resp}')
-        if resp.status_code == 204:
-            raise e(f'request failed with status code: {resp}')
+
+    if resp.status_code != 200:
+        log.warning(f'request came back with status code: {resp.status_code} for url: {resp.request.url}')
 
     if is_series:
         return resp.json(), params.get('Collection').lower()
@@ -190,17 +189,16 @@ def get_partition_idx(full_list: List[str], thread_num: int) -> List[str]:
 
     # Set som variables for the loop
     partition_idx_list = []
-    list_len_threshold = list_len
     idx1 = 0
     idx2 = partion_list_length
     try:
         # append the partitions to a list and increment until
         # the criterion is reach
-        while partion_list_length < list_len_threshold:
+        while partion_list_length < list_len:
             partition_idx_list.append(full_list[idx1:idx2])
             idx1 += partion_list_length
             idx2 += partion_list_length
-            list_len_threshold -= (partion_list_length + partition_modulus)
+            list_len -= (partion_list_length + partition_modulus)
         else:
             # Include the very last partition, which can vary in size from the
             # rest pf the partitions
