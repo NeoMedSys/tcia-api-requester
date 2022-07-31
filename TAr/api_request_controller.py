@@ -51,7 +51,7 @@ class RequestController:
         check_make_folder(folder=self.data_path, verbose=True)
 
         if len(self.patient_dict) > 50:
-            log.warning('There are more than 50 patients in this dataset')
+            log.warning(f'There are {len(self.patient_dict)} patients in this dataset')
 
         log.info(f'the dataset will be stored here: {self.data_path}')
 
@@ -84,7 +84,7 @@ class RequestController:
                                             sedecs_list, patient,
                                             self.data_path
                                             )))
-                executor.map(lambda p: get_instance_series(*p), UID_LIST)
+            executor.map(lambda p: get_instance_series(*p), UID_LIST)
 
     def run(self) -> NoReturn:
         log.pipe(f"""

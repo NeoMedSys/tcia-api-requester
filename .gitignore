@@ -153,6 +153,7 @@ cython_debug/
 
 *.dcm
 *.nii
+*.log
 
 /TAr/data
 /data

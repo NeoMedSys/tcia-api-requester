@@ -484,3 +484,263 @@ NoneType: None[0m
                 TCIA-API-Requester 0.1.0-beta1
                 [0m
 [32m2022-07-26 11:44:43,018[0m | [32mPIPE    [0m | [32mData extracted and saved, you are all set (⌐■_■)[0m
+[32m2022-07-26 18:07:59,384[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: UPENN-GBM
+                Workers: 5
+                Concurrent Threads: 5
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 160
+                if not:
+                    max_workers = 5
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[31m2022-07-26 18:25:26,216[0m | [31mERROR   [0m | [31mzipefile extraction failed for uid984589258.zip[0m
+Traceback (most recent call last):
+  File "/home/jon/ml-engineering/TAr/TAr/src/tcia_api.py", line 161, in get_instance_series
+    ZipFile(filepath.format(filename=item)).extractall(sedesc_folder)
+  File "/usr/lib/python3.10/zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "/usr/lib/python3.10/zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file[0m
+[31m2022-07-26 18:25:57,231[0m | [31mERROR   [0m | [31mwas not able to create /home/jon/ml-engineering/TAr/TAr/data/raw/raw-upenn-gbm-dicom/patient-upenngbm00006/study-2648749513[0m
+Traceback (most recent call last):
+  File "/home/jon/ml-engineering/TAr/TAr/src/helpers.py", line 63, in check_make_folder
+    os.makedirs(folder)
+  File "/usr/lib/python3.10/os.py", line 225, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/jon/ml-engineering/TAr/TAr/data/raw/raw-upenn-gbm-dicom/patient-upenngbm00006/study-2648749513'[0m
+[31m2022-07-26 18:26:17,982[0m | [31mERROR   [0m | [31mzipefile extraction failed for uid927920541.zip[0m
+Traceback (most recent call last):
+  File "/home/jon/ml-engineering/TAr/TAr/src/tcia_api.py", line 161, in get_instance_series
+    ZipFile(filepath.format(filename=item)).extractall(sedesc_folder)
+  File "/usr/lib/python3.10/zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "/usr/lib/python3.10/zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file[0m
+[31m2022-07-26 18:27:07,601[0m | [31mERROR   [0m | [31mwas not able to create /home/jon/ml-engineering/TAr/TAr/data/raw/raw-upenn-gbm-dicom/patient-upenngbm00008/study-3764388011[0m
+Traceback (most recent call last):
+  File "/home/jon/ml-engineering/TAr/TAr/src/helpers.py", line 63, in check_make_folder
+    os.makedirs(folder)
+  File "/usr/lib/python3.10/os.py", line 225, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/jon/ml-engineering/TAr/TAr/data/raw/raw-upenn-gbm-dicom/patient-upenngbm00008/study-3764388011'[0m
+[31m2022-07-26 19:05:41,308[0m | [31mERROR   [0m | [31mzipefile extraction failed for uid117775916.zip[0m
+Traceback (most recent call last):
+  File "/home/jon/ml-engineering/TAr/TAr/src/tcia_api.py", line 161, in get_instance_series
+    ZipFile(filepath.format(filename=item)).extractall(sedesc_folder)
+  File "/usr/lib/python3.10/zipfile.py", line 1645, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "/usr/lib/python3.10/zipfile.py", line 1698, in _extract_member
+    with self.open(member, pwd=pwd) as source, \
+  File "/usr/lib/python3.10/zipfile.py", line 1535, in open
+    raise BadZipFile("Bad magic number for file header")
+zipfile.BadZipFile: Bad magic number for file header[0m
+[32m2022-07-26 22:41:26,521[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: UPENN-GBM
+                Workers: 5
+                Concurrent Threads: 5
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 160
+                if not:
+                    max_workers = 5
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2022-07-26 22:41:48,156[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: RIDER Breast MRI
+                Workers: 5
+                Concurrent Threads: 5
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 160
+                if not:
+                    max_workers = 5
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2022-07-26 22:41:51,892[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: RIDER Breast MRI
+                Workers: 5
+                Concurrent Threads: 7
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 160
+                if not:
+                    max_workers = 5
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2022-07-26 22:42:12,302[0m | [32mPIPE    [0m | [32mData extracted and saved, you are all set (⌐■_■)[0m
+[32m2022-07-26 22:44:56,952[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: UPENN-GBM
+                Workers: 5
+                Concurrent Threads: 30
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 160
+                if not:
+                    max_workers = 5
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2022-07-26 22:49:02,797[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: UPENN-GBM
+                Workers: 30
+                Concurrent Threads: 30
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 960
+                if not:
+                    max_workers = 30
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2022-07-26 23:09:12,560[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: UPENN-GBM
+                Workers: 30
+                Concurrent Threads: 5
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 960
+                if not:
+                    max_workers = 30
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2022-07-26 23:26:32,806[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: UPENN-GBM
+                Workers: 30
+                Concurrent Threads: 4
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 960
+                if not:
+                    max_workers = 30
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2022-07-26 23:54:19,718[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: UPENN-GBM
+                Workers: 5
+                Concurrent Threads: 30
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 160
+                if not:
+                    max_workers = 5
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2022-07-27 07:26:33,792[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: UPENN-GBM
+                Workers: 5
+                Concurrent Threads: 30
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 160
+                if not:
+                    max_workers = 5
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2022-07-27 12:56:45,539[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: UPENN-GBM
+                Workers: 30
+                Concurrent Threads: 4
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 960
+                if not:
+                    max_workers = 30
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2022-07-27 19:36:17,345[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: UPENN-GBM
+                Workers: 30
+                Concurrent Threads: 3
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 960
+                if not:
+                    max_workers = 30
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2022-07-27 20:26:10,386[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: UPENN-GBM
+                Workers: 30
+                Concurrent Threads: 2
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 960
+                if not:
+                    max_workers = 30
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[31m2022-07-27 21:25:03,167[0m | [31mERROR   [0m | [31mzipefile extraction failed for uid262038288.zip[0m
+Traceback (most recent call last):
+  File "/home/jon/ml-engineering/TAr/TAr/src/tcia_api.py", line 161, in get_instance_series
+    ZipFile(filepath.format(filename=item)).extractall(sedesc_folder)
+  File "/usr/lib/python3.10/zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "/usr/lib/python3.10/zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file[0m
+[31m2022-07-27 21:49:10,082[0m | [31mERROR   [0m | [31mzipefile extraction failed for uid261433965.zip[0m
+Traceback (most recent call last):
+  File "/home/jon/ml-engineering/TAr/TAr/src/tcia_api.py", line 161, in get_instance_series
+    ZipFile(filepath.format(filename=item)).extractall(sedesc_folder)
+  File "/usr/lib/python3.10/zipfile.py", line 1645, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "/usr/lib/python3.10/zipfile.py", line 1698, in _extract_member
+    with self.open(member, pwd=pwd) as source, \
+  File "/usr/lib/python3.10/zipfile.py", line 1535, in open
+    raise BadZipFile("Bad magic number for file header")
+zipfile.BadZipFile: Bad magic number for file header[0m
+[32m2022-07-27 22:36:57,042[0m | [32mPIPE    [0m | [32mData extracted and saved, you are all set (⌐■_■)[0m
