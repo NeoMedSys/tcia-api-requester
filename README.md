@@ -5,7 +5,7 @@
 
 [active]
 
-The cancer imaging archive can provide some useful public datasets for experimenting with e.g. deep learning for medical diagnostics. The downside is that the data is hard to obtain if you are on Arch linux machine, which is why the tcia-api-requester (TAr) was developed. Use this wrapper to fetch any publically available dataset that includes the modalities MR, CT and PET. 
+The cancer imaging archive can provide some useful public datasets for experimenting with e.g. deep learning for medical diagnostics. The downside is that the data is hard to obtain if you are on a linux machine or cumbersome if you are using the NMBIA desktop application. This is why the tcia-api-requester (TAr) was developed. Use this wrapper to fetch any publically available dataset that includes the modalities MR, CT and PET. 
 
 
 #### 0. Requirements
