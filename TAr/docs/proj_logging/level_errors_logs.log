@@ -744,3 +744,49 @@ Traceback (most recent call last):
     raise BadZipFile("Bad magic number for file header")
 zipfile.BadZipFile: Bad magic number for file header[0m
 [32m2022-07-27 22:36:57,042[0m | [32mPIPE    [0m | [32mData extracted and saved, you are all set (⌐■_■)[0m
+[32m2022-08-01 09:43:00,317[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: ACRIN 6698/I-SPY2 Breast DWI
+                Workers: 5
+                Concurrent Threads: 5
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 160
+                if not:
+                    max_workers = 5
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2022-08-01 09:43:46,394[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: ACRIN 6698/I-SPY2 Breast DWI
+                Workers: 50
+                Concurrent Threads: 3
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 1600
+                if not:
+                    max_workers = 50
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2022-08-01 09:46:08,165[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: Duke-Breast-Cancer-MRI
+                Workers: 50
+                Concurrent Threads: 3
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 1600
+                if not:
+                    max_workers = 50
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2022-08-01 12:52:40,653[0m | [32mPIPE    [0m | [32mData extracted and saved, you are all set (⌐■_■)[0m
