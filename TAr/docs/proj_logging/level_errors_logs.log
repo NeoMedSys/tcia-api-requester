@@ -790,3 +790,109 @@ zipfile.BadZipFile: Bad magic number for file header[0m
                 TCIA-API-Requester 0.1.0-beta1
                 [0m
 [32m2022-08-01 12:52:40,653[0m | [32mPIPE    [0m | [32mData extracted and saved, you are all set (⌐■_■)[0m
+[32m2022-08-02 01:32:02,865[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: I-SPY2 Trial
+                Workers: 50
+                Concurrent Threads: 3
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 1600
+                if not:
+                    max_workers = 50
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2022-08-02 01:37:16,057[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: Breast Cancer Screening-DBT
+                Workers: 50
+                Concurrent Threads: 3
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 1600
+                if not:
+                    max_workers = 50
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2022-08-02 01:37:49,246[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: I-SPY2-Trial
+                Workers: 50
+                Concurrent Threads: 3
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 1600
+                if not:
+                    max_workers = 50
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2022-08-02 01:37:56,143[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: I-SPY2
+                Workers: 50
+                Concurrent Threads: 3
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 1600
+                if not:
+                    max_workers = 50
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2022-08-02 01:38:30,109[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: ACRIN-Contralateral-Breast-MR (ACRIN 6667)
+                Workers: 50
+                Concurrent Threads: 3
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 1600
+                if not:
+                    max_workers = 50
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2022-08-02 01:43:36,061[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: I-SPY2 TRIAL
+                Workers: 50
+                Concurrent Threads: 3
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 1600
+                if not:
+                    max_workers = 50
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2022-08-02 01:46:03,395[0m | [32mPIPE    [0m | [32m
+                ###############################################
+                ## Running the API requester with the following
+                ###############################################
+                Dataset name: CPTAC-LUAD
+                Workers: 50
+                Concurrent Threads: 3
+                Using CPU core count: False
+                Note!
+                if Using CPU cores is True then:
+                    max_workers = 1600
+                if not:
+                    max_workers = 50
+                TCIA-API-Requester 0.1.0-beta1
+                [0m
+[32m2022-08-02 02:04:31,912[0m | [32mPIPE    [0m | [32mData extracted and saved, you are all set (⌐■_■)[0m
