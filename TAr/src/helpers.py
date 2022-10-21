@@ -122,42 +122,7 @@ def api_request(url: str, params: Dict[str, str], is_series: bool = True) -> Dic
         return resp.json(), params.get('Collection').lower()
     else:
         return resp
-
-# def api_request_scans(
-#             datapath: str,
-#             url: str, siUID: str, session
-#             ):
-
-#     with session.get(url, siUID) as response:
-#         if response.status_code == 200:
-#             print('connection established')
-#         else:
-#             raise HTTPError(f'request failed with status code: {response.status_code}')
-#             print(f'the url: {response.requests.url}')
-
-#     elapsed = default_timer() - START_TIME
-#     time = f'{elapsed}s'
-#     print("{0:<30} {1:>20}".format(siUID, time))
-
-#     return response.iter_content(chunk_size=100)
-
-
-# async def asynchronous_data_extraction(serieslist: list):
-#     print('{0:<30} {1:>20}'.format('ZipFile', 'Download complete:'))
-#     with ThreadPoolExecutor(max_workers=10) as executor:
-#         with requests.Session() as session:
-#             loop = asyncio.get_event_loop()
-#             START_TIME = default_timer()
-#             tasks = [
-#                 loop.run_in_executor(
-#                     executor,
-#                     api_request_scans,
-#                     *(session, siUID)
-#                 ) for siUID in serieslist]
-
-#             for response in await asyncio.gather(*tasks):
-#                 pass
-
+    
 
 def get_partition_idx(full_list: List[str], thread_num: int) -> List[str]:
     """This function partitions a list into smaller sized lists which are then appended to
