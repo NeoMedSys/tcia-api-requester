@@ -3,6 +3,7 @@ This script contains helper functions for the TAr api requester.
 """
 # externals
 import os
+import sys
 from tqdm.contrib import tzip
 from tqdm import tqdm
 from zipfile import ZipFile, BadZipFile, LargeZipFile
@@ -30,17 +31,25 @@ def get_series_list(dataset_name: str) -> Union[os.PathLike, Dict[str, str]]:
     str
         A string value for the name of the dataset
     """
-    # update the patient parameter dict
-    config.get_patient_params.update({'Collection': dataset_name})
+    try:
+        # update the patient parameter dict
+        config.get_patient_params.update({'Collection': dataset_name})
 
-    # who you gonna call
-    resp = api_request(
-                    url=config.URL_PATIENT,
-                    params=config.get_patient_params,
-                    is_series=False
-                    )
+        # who you gonna call
+        resp = api_request(
+                        url=config.URL_PATIENT,
+                        params=config.get_patient_params,
+                        is_series=False
+                        )
 
-    patients = resp.json()
+        patients = resp.json()
+    except ValueError:
+        log.error(
+                f'I tried request the patient list for the dataset {dataset_name}, but received ({resp.text}) with status {resp.status_code} and URL {resp.url}',
+                exc_info=True
+                )
+        sys.exit(1)
+
     if patients:
         for idx in tqdm(range(len(patients)), total=len(patients)):
             patient = patients[idx].get('PatientId')

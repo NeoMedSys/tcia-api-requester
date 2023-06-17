@@ -106,7 +106,7 @@ def api_request(url: str, params: Dict[str, str], is_series: bool = True) -> Dic
     collection str
         The dataset name
     """
-    headers = {'User-Agent': config.USER_AGENT}
+    headers = {'User-Agent': config.USER_AGENT, 'Content-Type': 'application/json'}
     try:
         resp = requests.get(url, params=params, verify=True, headers=headers)
     except HTTPError:
